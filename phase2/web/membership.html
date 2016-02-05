@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="generate_1.js"></script>
+        <script src="cookies.js"></script>
+        <script src="involvements_1.js"></script>
+        <script src="memberValidation.js"></script>
+        <title>OSCA: Otago Chinese Association - Membership</title>
+    </head>
+    <body>
+        <section>
+            <header>
+                <div id="logo">
+                    <img src="logo.jpg" alt="The New Zealand Chinese Association, Otago and Southland Branch Logo">
+                </div>
+
+                <nav id="menu">
+                    <ul>
+                        <li class="links">
+                            <a href="index.html">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="links">
+                            <a>
+                                MEMBERSHIP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                ABOUT
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>       
+        </section>
+        <section>
+
+            <div id="form">
+                <h1>Membership</h1>
+                <form action="/info221-phase2/CreateNewAccount" method="post">
+                    <fieldset>
+                        <div class="memberForm">
+                            <h2>Member</h2>
+                            <div id="error"></div>
+                            <div class="columnone">
+                                <h3>Contact Details: </h3>
+                                <div class="details">
+                                    <label class="member">First Name: <input type="text" id="firstName" name="firstName" required></label>
+                                    <label class="member">Last Name: <input type="text" id="lastName" name="lastName" required></label>
+                                    <label class="member">Address: <input type="text" id="address" name="address" required></label>
+                                    <label class="member">Phone: <input type="text" id="phone" name="phone"></label>  
+                                    <label class="member">Email: <input type="email" id="email" name="email"></label>
+                                    <label class="member">Are you Chinese: 
+                                    <select name="eligibility" id="eligibility">                                    
+
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                    
+                                    </label>
+                                    
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h3>Activities involved: </h3>
+                                <div style="display: block">
+                                    <ul class="activities">
+                                        <li class="activity"><input class="involvement" type="checkbox" name="involvement" value="Basketball">
+                                            Basketball</li>
+                                        <li class="activity"><input class="involvement" type="checkbox" name="involvement" value="Chinese School">
+                                            Chinese School</li>
+                                        <li class="activity"><input class="involvement" type="checkbox" name="involvement" value="Newsletter">
+                                            Newsletter</li>
+
+                                        <li class="activity"><input class="involvement" type="checkbox" name="involvement" value="Social">
+                                            Social</li>
+                                        <li class="activity"><input class="involvement" type="checkbox" name="involvement" value="Fundraising">
+                                            Fundraising</li>
+                                        <li class="activity"><input class="involvement" type="checkbox" name="involvement" value="Cultural">
+                                            Cultural</li>
+                                        <li class="activity"><input class="involvement" type="checkbox" name="involvement" value="Other">
+                                            Other</li>
+                                    </ul>
+                                    <input type="hidden" class="allActivities" name="allActivities" value="null">
+                                </div>
+                            </div>
+
+                            <div style="display: block" class="column">
+                                <h3>Subscription: </h3>
+                                <select name="subscriptionType" id="subscriptionType">                                    
+
+                                    <option value="student">Student - $5</option>
+                                    <option value="single">Single Adult - $10</option>
+                                    <option value="family">Family (Parents and children under 21) - $20</option>
+                                    <option value="adult">Adult 70+ - Free</option>
+                                </select>
+                            </div>
+
+                            <div id="familyForm" style="display: none">
+
+                                <label class="familyButtons">Partner:  
+                                    <button id="partnerButton" type="button">Yes</button>
+                                    <button id="noPartner" type="button">No</button>
+                                </label>
+
+                                <label class="familyButtons">Siblings: 
+                                    <button id="siblingButton" type="button">Yes</button>
+                                    <button id="noSibling" type="button">No</button>
+                                </label>
+
+                                <label class="familyButtons">Children:  
+                                    <button id="childrenButton" type="button">Yes</button>
+                                    <button id="noChildren" type="button">No</button>
+                                </label>
+
+                                <div class="partnerFormGenerate"></div>
+                                <div class="siblingFormGenerate"></div>
+                                <div class="childrenFormGenerate"></div>
+
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+                    <div style="display: block">
+                        <button type="submit" id="subbut">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </body>
+</html>

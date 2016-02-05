@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+	font-family: bigNoodle;
+	src: url(big_noodle_titling.ttf);
+}
+
+@font-face{
+    font-family: keepCalm;
+    src: url(KeepCalm-Medium.ttf);
+    
+}
+
+html{
+    color:#e7e7e7;
+    background-color: #7E3E3E;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    color: inherit;
+    background-color: inherit;
+    font-family: Tahoma;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+header {
+    color: white;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    padding-top: 5px;
+}
+
+#logo, img{
+    margin: auto;
+    width: 500px;
+    clear: both;
+}
+
+#menu{
+    margin-left: auto;
+    margin-right:auto;
+    width: -moz-fit-content;
+    font-size: 1.7em;
+    clear: both;
+    padding-bottom: 5px;
+}
+
+#menu ul{
+    padding: 0px;
+    margin: auto;
+    width: auto;
+}
+
+#menu a, #menu li{
+    background-color: inherit;
+    list-style-type: none;
+    float: left;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 25px;
+}
+
+li{
+    margin-top: 5px;
+}
+
+.links{
+    margin-right: 2em;
+}
+
+
+#form{
+    clear: both;
+}
+
+h1{
+    color: inherit;
+    background-color:#cd9e73;
+    clear: both;
+    text-align: left;
+    font-weight: normal;
+    margin: 0px;
+    padding-left: 5px;
+    font-size: 3em;
+    font-family: bigNoodle;
+}
+
+.member{
+    float: right;
+    clear: both;
+    width: auto;
+    margin: 0px;
+    text-align: left;
+}
+
+.details{
+    float: left;
+    width: -moz-fit-content;
+}
+
+fieldset{
+    margin: 0px;
+    padding: 0px;
+     
+    border: none;
+    //border-top: 1px solid #753A3A;
+   
+   background-color: #453838;
+}
+form{
+    border-bottom: 1px solid #753A3A;
+   background-color: #453838;
+   padding-bottom: 15px;
+}
+
+.involvement{
+    float: left;
+    clear: both;
+    margin-left: 0px;
+}
+
+#act{
+    float: left;
+    clear: both;
+}
+
+#subBut{
+    clear: both;
+}
+
+.column, .columnone,.partnerFormGenerate .pcolumn,.partnerFormGenerate p.columnone{
+        clear: right;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+.columnone, .pcolumnone{
+    float: left;
+    width: 30%;    
+}
+
+.column, .pcolumnone{
+    float: left;
+    width: 30%;
+}
+
+h2{
+    color: inherit;
+    background-color:#d6d2d2;
+    clear: both;
+    text-align: left;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0px;
+    color: #453838;
+    padding-left: 5px;
+    border-bottom: 1px solid;
+}
+
+#partnerH{
+    color: inherit;
+    background-color: inherit;
+    clear: both;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: white solid 1px;
+}
+
+h3{
+    color: inherit;
+    background-color: inherit;
+    clear: both;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    clear: right;
+}
+
+.columntwo{
+    float: right;
+    clear: right;
+    padding: 0px;
+    margin: 0px;
+    width: 70%;
+}
+
+.columnthree {
+    float: right;
+    clear: right;
+    padding: 0px;
+    margin: 0px;
+    width: 30%;    
+}
+
+#subscriptionType{
+    float: left;
+    clear: right;
+    margin-left: 10px;
+}
+
+
+.columnonePart{
+    float: left;
+    clear: right;
+    width: 235px;
+    padding: 5px;
+    margin: auto;
+}
+
+#partner{
+    float: left;
+    width: 100%;
+}
+#child{
+    float: left;
+    width: 100%;
+}
+
+#member{
+    float: left;
+    width: 100%;
+}
+
+.activityLabel{
+    float: left;
+    display: inline-block;
+}
+
+.activityBox{
+    float: left;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.partnerFormGenerate{
+    clear: both;    
+}
+
+.familyButtons{
+    float: right;
+    clear: right;
+    display: block;
+    padding-right: 60px;
+    
+}
+section{
+    clear: both;
+}
+
+#clearButton, #searchButton{
+    margin-left: 5px;
+}
+
+#searchBar{
+    width:-moz-fit-content;
+}
+
+
+.viewFN{
+    clear: both;
+}
+
+.viewFN, .viewLN, .viewA, .viewPN, .viewE, .viewAct, .viewPart, .viewChild, .viewSib{
+    float: left;
+    width: 10%;
+    padding-left: 10px;
+}
+.activity{
+    float: none;
+}
+
+#purpose ul{
+     display: block;
+}
+
+#purpose, #history, #benefits{
+    padding: 0px;
+    
+}
+
+#benefits p{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+}
+
+.activities li{
+    list-style-type: none;
+}
+
+#benefits{
+    padding: 0px;
+}
+
+#details{
+    background-color: #453838;
+}
+
+/* unvisited link */
+a:link {
+    color:#c9c9c9;
+}
+
+/* visited link */
+a:visited {
+    color:#c9c9c9;
+}
+
+/* mouse over link */
+a:hover {
+    color:#c9c9c9;
+}
+
+/* selected link */
+a:active {
+    color:#c9c9c9;
+}
+
+.d1{
+    padding-left: 5px;
+    
+}
+#purpose{
+    background-color: #453838;
+    padding-bottom: 5px;
+    
+}
+.column{
+    padding-bottom: 10px;
+    
+}
