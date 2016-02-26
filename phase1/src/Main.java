@@ -8,6 +8,12 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * 
+ * Web-based system for Otago Southland Chinese Association (OSCA)
+ * 
+ * @author Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid and Hans To'o
+ */
 public class Main {
 
     public static void main(String[] args) throws IOException, SQLException, Exception {

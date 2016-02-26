@@ -12,8 +12,10 @@ import net.sf.oval.constraint.NotEmpty;
 import net.sf.oval.constraint.NotNull;
 
 /**
- *
- * @author leegi405
+ * 
+ * Web-based system for Otago Southland Chinese Association (OSCA)
+ * 
+ * @author Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid and Hans To'o
  */
 public class Payment implements Comparable<Payment> {
     private Integer paymentID;

@@ -15,8 +15,10 @@ import net.sf.oval.constraint.NotNegative;
 import net.sf.oval.constraint.NotNull;
 
 /**
- *
- * @author Kendall Lauren Chin
+ * 
+ * Web-based system for Otago Southland Chinese Association (OSCA)
+ * 
+ * @author Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid and Hans To'o
  */
 public class Member implements Comparable<Member> {
 

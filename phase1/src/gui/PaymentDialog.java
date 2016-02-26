@@ -13,8 +13,10 @@ import dao.*;
 import gui.helpers.ValidationHelper;
 
 /**
- *
- * @author mirji507
+ * 
+ * Web-based system for Otago Southland Chinese Association (OSCA)
+ * 
+ * @author Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid and Hans To'o
  */
 public class PaymentDialog extends javax.swing.JDialog {
     MemberDAO aDAO;

@@ -14,8 +14,10 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author brase127
+ * 
+ * Web-based system for Otago Southland Chinese Association (OSCA)
+ * 
+ * @author Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid and Hans To'o
  */
 public class PartnerDialog extends javax.swing.JDialog {
    MemberDAO dao;

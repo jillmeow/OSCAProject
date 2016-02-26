@@ -6,8 +6,10 @@
 package domain;
 
 /**
- *
- * @author mirji507
+ * 
+ * Web-based system for Otago Southland Chinese Association (OSCA)
+ * 
+ * @author Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid and Hans To'o
  */
 public class Admin {
     private String username;
