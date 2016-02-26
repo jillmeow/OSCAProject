@@ -1,3 +1,13 @@
+/**
+ * 
+ * This script collects and process any involvements that the 
+ * user wants to participate in the association
+ * 
+ * Made by INFO312 Students
+ * Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid, and Hans To'o
+ * 
+ */
+
 var involve = (function (){
     var pub = {};
     

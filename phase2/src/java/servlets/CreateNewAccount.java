@@ -23,8 +23,10 @@ import java.util.*;
 //import dao.MemberJdbcDAO;
 
 /**
- *
- * @author mirji507
+ * 
+ * Web-based system for Otago Southland Chinese Association (OSCA)
+ * 
+ * @author Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid and Hans To'o
  */
 @WebServlet(name = "CreateNewAccount", urlPatterns = {"/CreateNewAccount"})
 public class CreateNewAccount extends HttpServlet {
@@ -220,7 +222,6 @@ public class CreateNewAccount extends HttpServlet {
                 //System.out.println(mem.getFirstName());
                 ArrayList<String> allSiblings = new ArrayList<>();
                 allSiblings.add(member.getFirstName());
-                //mem.setSiblingsName("kili kili");
                 for(String sb : siblingNames){
                     if(!sb.equals(mem.getFirstName())){
                         allSiblings.add(sb);

@@ -114,11 +114,8 @@ h1{
 fieldset{
     margin: 0px;
     padding: 0px;
-     
     border: none;
-    //border-top: 1px solid #753A3A;
-   
-   background-color: #453838;
+    background-color: #453838;
 }
 form{
     border-bottom: 1px solid #753A3A;

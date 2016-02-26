@@ -1,8 +1,10 @@
 /**
+ * 
  * Utility functions for getting/setting Cookies.
  *
- * Created by: Steven Mills, 09/04/2014
- * Last Modified by: Steven Mills 04/08/2014
+ * Made by INFO312 Students
+ * Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid, and Hans To'o
+ * 
  */
 
 /*jslint browser: true */

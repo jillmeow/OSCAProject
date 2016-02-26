@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package servlets;
 
 import dao.MemberJdbcDAO;
@@ -18,8 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 //import org.apache.catalina.tribes.util.Arrays;
 
 /**
- *
- * @author mirji507
+ * 
+ * Web-based system for Otago Southland Chinese Association (OSCA)
+ * 
+ * @author Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid and Hans To'o
  */
 @WebServlet(name = "SearchUser", urlPatterns = {"/SearchUser"})
 public class SearchUser extends HttpServlet {

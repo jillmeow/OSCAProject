@@ -1,4 +1,14 @@
-﻿var generateForm = (function(){
+/**
+ * 
+ * This script generates either partner, siblings, or child form 
+ * if the user selects family subscription.
+ * 
+ * Made by INFO312 Students
+ * Jill Mirandilla, Kendall Chin, Gary Lee, Sean Braid, and Hans To'o
+ * 
+ */
+
+var generateForm = (function(){
 	var pub = {};
         var count = 0;
         var numSibling = 0;
