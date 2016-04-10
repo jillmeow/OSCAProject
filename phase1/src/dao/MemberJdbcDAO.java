@@ -26,8 +26,7 @@ import java.util.TreeSet;
 public class MemberJdbcDAO implements MemberDAO {
 
     public void save(Member aMember) {
-        String sql = "merge into members (id, firstName, lastName, address, phoneNumber, email, partnersName,"
-                + "siblingsName, catagories, subscription, child , status, eligibility) values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "merge into members (id, firstName, lastName, address, phoneNumber, email, partnersName, siblingsName, catagories, subscription, child , status, eligibility) values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
         try (
                 // get connection to database
                 Connection dbCon = ShoppingConnection.getConnection();
@@ -277,7 +276,7 @@ public class MemberJdbcDAO implements MemberDAO {
 
     @Override
     public Collection<Member> getByCategories(String aCategory) {
-        String sql = "select * from members where catagories = '" + aCategory + "' order by id;";
+        String sql = "select * from members where CATAGORIES LIKE '%" + aCategory + "%' order by id;";
         try (
                 // get a connection to the database
                 Connection dbCon = ShoppingConnection.getConnection();

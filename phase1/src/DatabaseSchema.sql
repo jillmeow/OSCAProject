@@ -80,3 +80,10 @@ username varchar not null,
 password varchar not null,
 constraint pk_admins primary key(username)
  );
+
+SELECT * FROM MEMBERS WHERE CATAGORIES LIKE '%Basketball%';
+SELECT * FROM MEMBERS WHERE CATAGORIES LIKE '%Chinese School%';
+SELECT * FROM MEMBERS WHERE CATAGORIES LIKE '%Social%';
+SELECT * FROM MEMBERS WHERE CATAGORIES LIKE '%Fundraising%';
+SELECT * FROM MEMBERS WHERE CATAGORIES LIKE '%Newsletter%';
+SELECT * FROM MEMBERS WHERE CATAGORIES LIKE '%Cultural%';

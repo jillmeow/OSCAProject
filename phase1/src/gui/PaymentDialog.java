@@ -96,14 +96,14 @@ public class PaymentDialog extends javax.swing.JDialog {
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setBackground(new java.awt.Color(153, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Champagne & Limousines", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Make Payment");
         jLabel1.setOpaque(true);
 
         jLabel5.setBackground(new java.awt.Color(153, 0, 0));
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setLabelFor(descriptionField);
         jLabel5.setText("Description:");
@@ -111,21 +111,21 @@ public class PaymentDialog extends javax.swing.JDialog {
         jLabel5.setOpaque(true);
 
         jLabel6.setBackground(new java.awt.Color(153, 0, 0));
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Date Payed:");
         jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel6.setOpaque(true);
 
         jLabel7.setBackground(new java.awt.Color(153, 0, 0));
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Date Recorded:");
         jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel7.setOpaque(true);
 
         jLabel2.setBackground(new java.awt.Color(153, 0, 0));
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setLabelFor(paymentID);
         jLabel2.setText("Payment ID: ");
@@ -139,6 +139,7 @@ public class PaymentDialog extends javax.swing.JDialog {
         });
 
         jButton1.setBackground(new java.awt.Color(153, 0, 0));
+        jButton1.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Save");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -150,7 +151,7 @@ public class PaymentDialog extends javax.swing.JDialog {
         });
 
         jLabel3.setBackground(new java.awt.Color(153, 0, 0));
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setLabelFor(memberID);
         jLabel3.setText("Member ID:");
@@ -158,6 +159,7 @@ public class PaymentDialog extends javax.swing.JDialog {
         jLabel3.setOpaque(true);
 
         closeBtn.setBackground(new java.awt.Color(153, 0, 0));
+        closeBtn.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         closeBtn.setForeground(new java.awt.Color(255, 255, 255));
         closeBtn.setText("Close");
         closeBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -169,7 +171,7 @@ public class PaymentDialog extends javax.swing.JDialog {
         });
 
         jLabel4.setBackground(new java.awt.Color(153, 0, 0));
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setLabelFor(amtPayed);
         jLabel4.setText("Amount $:");
@@ -255,11 +257,11 @@ public class PaymentDialog extends javax.swing.JDialog {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(dateRecordedField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(closeBtn))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

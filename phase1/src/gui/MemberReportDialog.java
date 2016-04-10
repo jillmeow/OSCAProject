@@ -9,6 +9,7 @@ import dao.MemberDAO;
 import domain.Member;
 import gui.helpers.SimpleListModel;
 import gui.helpers.ValidationHelper;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -30,10 +31,18 @@ public class MemberReportDialog extends javax.swing.JDialog {
         this.MemberModel = new SimpleListModel(dao.getAll());
         initComponents();
         lstProducts.setModel(MemberModel);
-        cmbCategories.setModel(new SimpleListModel(dao.getCategories()));
+        
+        System.out.println(dao.getCategories());
+        ArrayList<String> allCategories = new ArrayList<>();
+        allCategories.add("Basketball");
+        allCategories.add("Newsletter");
+        allCategories.add("Cultural");
+        allCategories.add("Social");
+        allCategories.add("Chinese School");
+        allCategories.add("Fundraising");
+        cmbCategories.setModel(new SimpleListModel(allCategories));
         cmbStatus.setModel(new SimpleListModel(dao.getStatus()));
         validHelp.addTypeFormatter(txtSearchById, "#0", Integer.class);
-        jLabel2.setVisible(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -53,7 +62,6 @@ public class MemberReportDialog extends javax.swing.JDialog {
         btnDelete = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
         txtSearchById = new javax.swing.JFormattedTextField();
-        jLabel2 = new javax.swing.JLabel();
         lblCategoryFilter1 = new javax.swing.JLabel();
         cmbStatus = new javax.swing.JComboBox();
         jButton1 = new javax.swing.JButton();
@@ -65,12 +73,12 @@ public class MemberReportDialog extends javax.swing.JDialog {
 
         jPanel1.setBackground(new java.awt.Color(153, 0, 0));
 
-        lblSearchById.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        lblSearchById.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         lblSearchById.setForeground(new java.awt.Color(255, 255, 255));
         lblSearchById.setText("Search by ID:");
 
         btnSearch.setBackground(new java.awt.Color(153, 0, 0));
-        btnSearch.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        btnSearch.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         btnSearch.setForeground(new java.awt.Color(255, 255, 255));
         btnSearch.setText("Search");
         btnSearch.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -85,7 +93,6 @@ public class MemberReportDialog extends javax.swing.JDialog {
         cmbCategories.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         cmbCategories.setForeground(new java.awt.Color(67, 38, 127));
         cmbCategories.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        cmbCategories.setBorder(null);
         cmbCategories.setName("cmbCategories"); // NOI18N
         cmbCategories.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,11 +100,9 @@ public class MemberReportDialog extends javax.swing.JDialog {
             }
         });
 
-        lblCategoryFilter.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        lblCategoryFilter.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         lblCategoryFilter.setForeground(new java.awt.Color(255, 255, 255));
         lblCategoryFilter.setText("Category:");
-
-        jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
 
         lstProducts.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         lstProducts.setForeground(new java.awt.Color(67, 38, 127));
@@ -109,7 +114,7 @@ public class MemberReportDialog extends javax.swing.JDialog {
         jScrollPane1.setViewportView(lstProducts);
 
         btnEdit.setBackground(new java.awt.Color(153, 0, 0));
-        btnEdit.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        btnEdit.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         btnEdit.setForeground(new java.awt.Color(255, 255, 255));
         btnEdit.setText("Edit");
         btnEdit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -122,7 +127,7 @@ public class MemberReportDialog extends javax.swing.JDialog {
         });
 
         btnDelete.setBackground(new java.awt.Color(153, 0, 0));
-        btnDelete.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        btnDelete.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete");
         btnDelete.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -135,7 +140,7 @@ public class MemberReportDialog extends javax.swing.JDialog {
         });
 
         btnClose.setBackground(new java.awt.Color(153, 0, 0));
-        btnClose.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        btnClose.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         btnClose.setForeground(new java.awt.Color(255, 255, 255));
         btnClose.setText("Close");
         btnClose.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -150,16 +155,13 @@ public class MemberReportDialog extends javax.swing.JDialog {
         txtSearchById.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         txtSearchById.setName("txtSearchById"); // NOI18N
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/s.png"))); // NOI18N
-
-        lblCategoryFilter1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        lblCategoryFilter1.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         lblCategoryFilter1.setForeground(new java.awt.Color(255, 255, 255));
         lblCategoryFilter1.setText("Status: ");
 
         cmbStatus.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         cmbStatus.setForeground(new java.awt.Color(67, 38, 127));
         cmbStatus.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        cmbStatus.setBorder(null);
         cmbStatus.setName("cmbCategories"); // NOI18N
         cmbStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,7 +170,7 @@ public class MemberReportDialog extends javax.swing.JDialog {
         });
 
         jButton1.setBackground(new java.awt.Color(153, 0, 0));
-        jButton1.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Champagne & Limousines", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Payment");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -179,7 +181,7 @@ public class MemberReportDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Champagne & Limousines", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Membership Report");
@@ -189,52 +191,51 @@ public class MemberReportDialog extends javax.swing.JDialog {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(425, 425, 425)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1)
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 536, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                        .addGap(76, 76, 76)
+                                        .addComponent(lblCategoryFilter1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(cmbStatus, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jScrollPane1)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                        .addGap(53, 53, 53)
+                                        .addComponent(lblCategoryFilter)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(txtSearchById)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(cmbCategories, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(28, 28, 28)
+                                        .addComponent(btnEdit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnClose, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(27, 27, 27))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnClose, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(lblCategoryFilter)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cmbCategories, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(lblSearchById)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtSearchById))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(lblCategoryFilter1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cmbStatus, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(18, 18, 18)
-                        .addComponent(btnSearch))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(39, 39, 39)
+                        .addComponent(lblSearchById, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnClose, btnDelete, btnEdit, jButton1});
-
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(16, 16, 16)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtSearchById, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -248,17 +249,15 @@ public class MemberReportDialog extends javax.swing.JDialog {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCategoryFilter1)
                     .addComponent(cmbStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 353, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 439, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnClose, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(btnDelete)))
-                .addContainerGap())
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEdit)
+                    .addComponent(btnDelete)
+                    .addComponent(jButton1)
+                    .addComponent(btnClose, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30))
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnClose, btnDelete, btnEdit});
@@ -345,7 +344,6 @@ public class MemberReportDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton1;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane1;

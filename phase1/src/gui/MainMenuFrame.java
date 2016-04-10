@@ -47,7 +47,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(153, 0, 0));
 
         btnAddProduct.setBackground(new java.awt.Color(153, 0, 0));
-        btnAddProduct.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        btnAddProduct.setFont(new java.awt.Font("Champagne & Limousines", 1, 24)); // NOI18N
         btnAddProduct.setForeground(new java.awt.Color(255, 255, 255));
         btnAddProduct.setText("Add New Member");
         btnAddProduct.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -63,7 +63,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         });
 
         btnViewProducts.setBackground(new java.awt.Color(153, 0, 0));
-        btnViewProducts.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        btnViewProducts.setFont(new java.awt.Font("Champagne & Limousines", 1, 24)); // NOI18N
         btnViewProducts.setForeground(new java.awt.Color(255, 255, 255));
         btnViewProducts.setText("View members");
         btnViewProducts.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -79,7 +79,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         });
 
         btnExit.setBackground(new java.awt.Color(153, 0, 0));
-        btnExit.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        btnExit.setFont(new java.awt.Font("Champagne & Limousines", 1, 24)); // NOI18N
         btnExit.setForeground(new java.awt.Color(255, 255, 255));
         btnExit.setText("Exit");
         btnExit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -98,7 +98,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/s.png"))); // NOI18N
 
         viewPaymentsBtn.setBackground(new java.awt.Color(153, 0, 0));
-        viewPaymentsBtn.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        viewPaymentsBtn.setFont(new java.awt.Font("Champagne & Limousines", 1, 24)); // NOI18N
         viewPaymentsBtn.setForeground(new java.awt.Color(255, 255, 255));
         viewPaymentsBtn.setText("View Payments Made");
         viewPaymentsBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
